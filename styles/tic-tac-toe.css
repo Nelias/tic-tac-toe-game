@@ -99,10 +99,6 @@ body {
     text-shadow: -0.15vw 0 #3c4628, 0 0.15vw #3c4628, 0.1vw 0 #3c4628, 0 -0.1vw #3c4628;
     margin-top: -5vw;
   }
-  
-  #score-text {
-    margin-bottom: 1.5vw;
-  }
 
   #score-wrapper div span {
     border: solid;
