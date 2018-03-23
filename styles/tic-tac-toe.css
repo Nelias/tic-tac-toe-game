@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+      color: black;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/e/e6/Iceberg_in_North_Star_Bay%2C_Greenland.jpg);
+    background-size: 100% 140%;
+  }
+  
+  #menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: #ddd;
+    text-shadow: -0.15vw 0 #3c4628, 0 0.15vw #3c4628, 0.1vw 0 #3c4628, 0 -0.1vw #3c4628;
+    margin-top: -5vw;
+  }
+  
+  #menu-text {
+    margin-bottom: 4vw;
+    font-size: 4.5vw;
+  }
+  
+  #selecion-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  #menu-wrapper div span {
+    border: solid;
+    border-color: #777;
+    border-width: 0.2vw;
+    border-radius: 3.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: white;
+    font-size: 7vw;
+  }
+  
+  #cross {
+    margin-right: 3vw;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Widmanst%C3%A4tten_pattern_kevinzim.jpg/600px-Widmanst%C3%A4tten_pattern_kevinzim.jpg);
+  }
+  
+  #nought {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Guide_leaflet_%281901%29_%2814762850101%29.jpg/640px-Guide_leaflet_%281901%29_%2814762850101%29.jpg);
+  }
+  
+  #board-wrapper {
+    display: none; /* flex */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-size: 7.5vw;
+    opacity: 0.9;
+  }
+  
+  #game-board {
+    overflow: hidden;
+  }
+  
+  #game-board div  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  #game-board div div {
+    border-style: solid;
+    border-width: 0.25vw;
+    border-radius: 1.125vw;
+    border-color: #777;
+    padding-left: 1.625vw;
+    padding-right: 1.625vw;
+    margin-left: 0vw; /*-1.875*/
+    min-width: 5.5vw !important;
+    width: 5.5vw;
+    height: 8.5vw;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Katalox.jpg/640px-Katalox.jpg);
+    color: #eee;
+  }
+  
+  #score-wrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: #ddd;
+    font-size: 6vw;
+    text-shadow: -0.15vw 0 #3c4628, 0 0.15vw #3c4628, 0.1vw 0 #3c4628, 0 -0.1vw #3c4628;
+    margin-top: -5vw;
+  }
+  
+  #score-text {
+    margin-bottom: 4vw;
+  }
+
+  #score-wrapper div span {
+    border: solid;
+    background: linear-gradient(0deg, #444, #777, #777, #444);
+    border-color: #555;
+    border-width: 0.1vw;
+    border-radius: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: #ddd;
+    font-size: 2vw;
+  }
+  
+  #play-again {
+    margin-right: 3vw;
+  }
+  
+  #game-board, #cross, #nought, #play-again, #reset:hover {
+    cursor: pointer;
+  }
